@@ -8,10 +8,10 @@
 书籍的增删查改；
 读者的增删查改；
 用文件充当数据库存储信息；
-3. 所涉及到的数据结构
+4. 所涉及到的数据结构
 图书结构体：图书编号，书名，作者，出版社信息，库存量，下一个节点指针
 读者结构体：读者id，姓名，性别，可借书数，已借书的编号，下一个节点指针
-4. 函数模块信息
+5. 函数模块信息
 a)主函数 int main()：调用Menu()函数，显示主界面
 b)查询图书馆信息——图书数量以及读者数量：
 void showLibInfo(Book* book_head,Reader* reader_head):
@@ -51,6 +51,7 @@ void changeReader(int readerID):
 //读者借书模块
 void borrowBook(int readerID, int bookID):
 接受两个形参,读者id和图书编号，用读者的id进行匹配，找到该读者后，用图书的编号进行匹配，进行借书，否则返回
+
 //读者还书模块
 void returnBook(int readerID, int bookID):
 接受两个形参,读者id和图书编号，用读者的id进行匹配，找到该读者后，用图书的编号进行匹配，进行还书，否则返回
